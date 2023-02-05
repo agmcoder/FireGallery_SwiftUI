@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0701A4B6298F0B1500A63668 /* FirebaseStorageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0701A4B5298F0B1500A63668 /* FirebaseStorageRepository.swift */; };
+		07BB9760299036A30053AA2C /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BB975F299036A30053AA2C /* SplashScreen.swift */; };
 		07CFA345298E8EC30052EE30 /* FirebaseStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CFA344298E8EC30052EE30 /* FirebaseStorageService.swift */; };
 		07CFA348298E90B40052EE30 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 07CFA347298E90B40052EE30 /* FirebaseAnalyticsSwift */; };
 		07CFA34A298E90B40052EE30 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 07CFA349298E90B40052EE30 /* FirebaseAppCheck */; };
@@ -48,6 +49,8 @@
 
 /* Begin PBXFileReference section */
 		0701A4B5298F0B1500A63668 /* FirebaseStorageRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseStorageRepository.swift; sourceTree = "<group>"; };
+		07BB975D299026DA0053AA2C /* FireGallery-SwiftUI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "FireGallery-SwiftUI-Info.plist"; sourceTree = SOURCE_ROOT; };
+		07BB975F299036A30053AA2C /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		07CFA344298E8EC30052EE30 /* FirebaseStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseStorageService.swift; sourceTree = "<group>"; };
 		07CFA351298EA1FE0052EE30 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		07CFA354298EA2B40052EE30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +108,14 @@
 			path = Repository;
 			sourceTree = "<group>";
 		};
+		07BB975E299036920053AA2C /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				07BB975F299036A30053AA2C /* SplashScreen.swift */,
+			);
+			path = SplashScreen;
+			sourceTree = "<group>";
+		};
 		07CFA343298E8E8F0052EE30 /* Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +155,7 @@
 		07E518AB298D2E5C0088CCBF /* FireGallery_SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				07BB975D299026DA0053AA2C /* FireGallery-SwiftUI-Info.plist */,
 				0701A4B4298F0AD500A63668 /* Repository */,
 				07CFA353298EA2A70052EE30 /* Delegate */,
 				07CFA351298EA1FE0052EE30 /* GoogleService-Info.plist */,
@@ -188,6 +200,7 @@
 		07E518D6298D2E7C0088CCBF /* View&ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				07BB975E299036920053AA2C /* SplashScreen */,
 				07E518D9298D2F190088CCBF /* Main */,
 			);
 			path = "View&ViewModel";
@@ -372,6 +385,7 @@
 				07E518DB298D2F2E0088CCBF /* Header.swift in Sources */,
 				07CFA355298EA2B40052EE30 /* AppDelegate.swift in Sources */,
 				07E518AF298D2E5C0088CCBF /* ContentView.swift in Sources */,
+				07BB9760299036A30053AA2C /* SplashScreen.swift in Sources */,
 				07E518D8298D2EA30088CCBF /* MainView.swift in Sources */,
 				07E518AD298D2E5C0088CCBF /* FireGallery_SwiftUIApp.swift in Sources */,
 				07CFA345298E8EC30052EE30 /* FirebaseStorageService.swift in Sources */,
@@ -531,15 +545,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FireGallery_SwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = 8WHNXCK73W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "FireGallery-SwiftUI-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = S;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -560,15 +576,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FireGallery_SwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = 8WHNXCK73W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "FireGallery-SwiftUI-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = S;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

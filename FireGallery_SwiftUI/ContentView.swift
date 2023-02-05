@@ -12,9 +12,7 @@ struct ContentView: View {
 
     var body: some View {
         VStack {
-            MainView()
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .edgesIgnoringSafeArea(.bottom)
+            SplashScreen()
 
         }
     }
