@@ -6,14 +6,23 @@
 //
 
 import SwiftUI
+import PhotosUI
 
 struct Header: View {
     @EnvironmentObject var mainVM: MainViewModel
+
+    @State private var showImagePicker: Bool = false
+    
     var body: some View {
         
         HStack {
             VStack {
-                Image(systemName: "plus.circle")
+                PhotosPicker(selection: $mainVM.selectedPhotosPickerItems){
+                    Image(systemName: "plus")
+                        .symbolRenderingMode(.multicolor)
+                        .font(.system(size: 20))
+                        .fontWeight(.heavy)
+                }
             } // VStack
             .frame(width: UIScreen.main.bounds.width / 3)
             
@@ -41,10 +50,11 @@ struct Header: View {
             } // VStack
             .frame(width: UIScreen.main.bounds.width / 3)
         } // HStack
+        .sheet(isPresented: $showImagePicker) {
+        } // Picker
     }
     
 }
-
 
 struct SelectImagesButton: View{
     @EnvironmentObject var mainVM: MainViewModel
@@ -60,8 +70,9 @@ struct SelectImagesButton: View{
 }
 
 
+
 struct Header_Previews: PreviewProvider {
     static var previews: some View {
-        Header()
+        Header().environmentObject(MainViewModel())
     }
 }

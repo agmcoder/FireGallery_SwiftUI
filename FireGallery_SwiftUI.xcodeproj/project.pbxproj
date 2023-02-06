@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0701A4B6298F0B1500A63668 /* FirebaseStorageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0701A4B5298F0B1500A63668 /* FirebaseStorageRepository.swift */; };
 		07BB9760299036A30053AA2C /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BB975F299036A30053AA2C /* SplashScreen.swift */; };
+		07BB9765299136430053AA2C /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BB9764299136430053AA2C /* Logger.swift */; };
 		07CFA345298E8EC30052EE30 /* FirebaseStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CFA344298E8EC30052EE30 /* FirebaseStorageService.swift */; };
 		07CFA348298E90B40052EE30 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 07CFA347298E90B40052EE30 /* FirebaseAnalyticsSwift */; };
 		07CFA34A298E90B40052EE30 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 07CFA349298E90B40052EE30 /* FirebaseAppCheck */; };
@@ -51,6 +52,7 @@
 		0701A4B5298F0B1500A63668 /* FirebaseStorageRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseStorageRepository.swift; sourceTree = "<group>"; };
 		07BB975D299026DA0053AA2C /* FireGallery-SwiftUI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "FireGallery-SwiftUI-Info.plist"; sourceTree = SOURCE_ROOT; };
 		07BB975F299036A30053AA2C /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		07BB9764299136430053AA2C /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		07CFA344298E8EC30052EE30 /* FirebaseStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseStorageService.swift; sourceTree = "<group>"; };
 		07CFA351298EA1FE0052EE30 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		07CFA354298EA2B40052EE30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -228,6 +230,7 @@
 		07E518E5298D572C0088CCBF /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				07BB9764299136430053AA2C /* Logger.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -386,6 +389,7 @@
 				07CFA355298EA2B40052EE30 /* AppDelegate.swift in Sources */,
 				07E518AF298D2E5C0088CCBF /* ContentView.swift in Sources */,
 				07BB9760299036A30053AA2C /* SplashScreen.swift in Sources */,
+				07BB9765299136430053AA2C /* Logger.swift in Sources */,
 				07E518D8298D2EA30088CCBF /* MainView.swift in Sources */,
 				07E518AD298D2E5C0088CCBF /* FireGallery_SwiftUIApp.swift in Sources */,
 				07CFA345298E8EC30052EE30 /* FirebaseStorageService.swift in Sources */,
